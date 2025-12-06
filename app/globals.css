@@ -4,6 +4,7 @@
   --background: #ffffff;
   --foreground: #171717;
   --dark-grey: #272727;
+  --green: #00524e;
 }
 
 @theme inline {
@@ -83,4 +84,29 @@ body {
   color: #f8f1ec;
   font-size: 55px;
   line-height: 150%;
+}
+
+.dark-grey {
+  background-color: var(--dark-grey);
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: medium;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+/* ============================================== */
+/* =================== Homepage =================== */
+
+/* Hero Section */
+.section-hero {
+  background-color: var(--green);
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 80px 15px 40px;
 }
