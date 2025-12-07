@@ -163,6 +163,7 @@ h1 {
   justify-content: unset;
   background-color: var(--smoked-white);
   color: var(--dark-gey);
+  min-height: 70vh;
 }
 
 .layout-contact .small-text {
@@ -178,5 +179,5 @@ h1 {
 }
 
 form input {
-  font-size: 20px;
+  font-size: clamp(20px, 3.2vw, 24px);
 }
