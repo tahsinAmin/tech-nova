@@ -5,6 +5,7 @@
   --foreground: #171717;
   --dark-grey: #272727;
   --green: #00524e;
+  --smoked-white: #f8f1ec;
 }
 
 @theme inline {
@@ -91,9 +92,12 @@ body {
 }
 
 h1 {
+  line-height: 1;
+}
+
+.home h1, .about h1  {
   font-size: 50px;
   font-weight: medium;
-  line-height: 1;
   margin-bottom: 10px;
 }
 
@@ -104,12 +108,54 @@ h1 {
 .section-hero {
   background-color: var(--green);
   color: white;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 80px 15px 40px;
+  padding: 100px 5% 40px;
 }
+
+
+
+/* ============================================== */
+/* =================== About =================== */
+.section-hero.about {
+  justify-content: flex-end;
+  background-color: var(--smoked-white);
+  color: var(--dark-grey);
+}
+
+.small-text {
+  color: rgb(39, 39, 39);
+  opacity: 0.4;
+  margin-bottom: 10px;
+}
+
+.team-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-item img {
+  box-sizing: border-box;
+  color: #2c3652;
+  object-fit: cover;
+  -moz-text-size-adjust: 100%;
+  border-radius: 50%;
+  height: 110px;
+  font-family: Public Sans, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: 110px;
+  width: 110px;
+}
+
+
+.smoked-white {
+  background-color: var(--smoked-white);
+}
+
 
 /* ============================================== */
 /* =================== Contact =================== */
