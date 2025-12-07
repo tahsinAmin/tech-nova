@@ -133,6 +133,23 @@ h1 {
   margin-bottom: 10px;
 }
 
+/* Team */
+
+.team {
+  padding-block: 80px;
+}
+
+.team h2 {
+  font-size: clamp(2.8em, 7vw, 5.8em);
+  line-height: 1.1;
+  font-weight: 500;
+}
+
+.team .subtitle {
+  font-size: clamp(16px, 2vw, 1.8em);
+  padding-bottom: 40px;
+}
+
 .team-item {
   display: flex;
   flex-direction: column;
