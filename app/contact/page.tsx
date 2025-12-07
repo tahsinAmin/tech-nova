@@ -17,14 +17,14 @@ export default function Contact() {
 
   return (
     <>
-      <div className="section-hero layout-contact flex-1 bg-zinc-50 font-sans dark:bg-black container">
+      <div className="section-hero layout-contact flex-1 bg-zinc-50 font-sans dark:bg-black">
         <h1 className="sm:mb-[94px] text-[50px] font-semibold mb-[10px]">Need some assistance or curious about who we are?</h1>
         <div className="px-[24px]">
           {formMsg ? null : <div className="small-text sm:mt-0">Send us a messsage</div>}
           <div className="sm:flex sm:gap-4 sm:justify-between">
             {formMsg ?
               <div className="text-center mt-[48px] mb-[15px]">Thanks for your message!</div> :
-              (<form onSubmit={handleSubmit} className="flex flex-col gap-4 max-w-md sm:w-4/5 ">
+              (<form onSubmit={handleSubmit} className="form-container">
                 <input
                   type="text"
                   required
@@ -48,14 +48,14 @@ export default function Contact() {
                 />
                 <button
                   type="submit"
-                  className="cta sm:w-[110px]"
+                  className="cta sm:w-[fit-content]"
                 >
                   {loading ? "Sending..." : "Send"}
                 </button>
 
               </form>)}
 
-            <div className="flex flex-col sm:w-1/5 sm:flex-row sm:justify-between sm:items-start">
+            <div className="or-book-a-call flex flex-col sm:w-1/5 sm:flex-row sm:justify-between sm:items-start">
               <div className="text-center py-[16px]">or</div>
               <button
                 type="submit"

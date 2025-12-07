@@ -1,10 +1,10 @@
 export default function About() {
   return (
     <>
-      <div className="section-hero about flex-1 bg-zinc-50 font-sans dark:bg-black container">
+      <div className="section-hero about flex-1 bg-zinc-50 font-sans dark:bg-black">
         <div className="hero-bottom">
-          <div className="small-text">About Logo</div>
-          <h1>On a mission to improve people's lives by untangling the web3 world.</h1>
+          <div className="small-text">About Nova Stack</div>
+          <h1>On a mission to improve people's lives by untangling the web world.</h1>
         </div>
       </div>
       <section className="team container">
