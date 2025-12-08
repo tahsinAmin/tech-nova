@@ -5,6 +5,7 @@
   --foreground: #171717;
   --dark-grey: #272727;
   --green: #00524e;
+  --red: #da3036;
   --smoked-white: #f8f1ec;
 }
 
@@ -81,10 +82,36 @@ body {
   bottom: 0;
 }
 
+
+.navlinks {
+  gap: 3em;
+}
+
+.navlinks a {
+  font-size: 2em;
+}
+
 .navlink-text-2 {
-  color: #f8f1ec;
+  margin-top: 7px;
   font-size: 55px;
   line-height: 150%;
+}
+
+.navbar-main-wrappe .navlink-text-2 {
+  margin-top: unset;
+  color: #f8f1ec;
+}
+
+.cta.nav {
+  padding: .433333em 1.72222em;
+  font-size: 1.5em;
+  font-weight: 400;
+  line-height: 177.778%;
+  margin-right: 18px;
+}
+
+.hamburger {
+  padding: 18px 12px;
 }
 
 .dark-grey {
@@ -103,10 +130,20 @@ h1 {
   letter-spacing: -2px;
 }
 
+.home h1,
+.layout-contact h1 {
+  padding-top: 2.8%;
+}
+
 /* ============================================== */
 /* =================== Homepage =================== */
 
 /* Hero Section */
+
+.section-hero.home {
+  background: linear-gradient(0deg, var(--red), 42%, #001e3fe3 100%);
+}
+
 .section-hero {
   background-color: var(--green);
   color: white;
