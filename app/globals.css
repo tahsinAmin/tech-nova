@@ -500,3 +500,109 @@ form input {
     padding: 12px 30px;
   }
 }
+:root {
+  --cards: 4;
+  --cardHeight: 87vh;
+  --cardTopPadding: 1.5em;
+  --cardMargin: 4vw;
+}
+
+#cards {
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(var(--cards), 50vh);
+  padding-left: 0;
+  display: grid;
+}
+
+
+#card1 {
+  --index: 1;
+  top: 8vh;
+}
+
+
+#card2 {
+  --index: 2;
+}
+
+
+#card3 {
+  --index: 3;
+}
+
+#card4 {
+  --index: 4;
+}
+
+#card2,
+#card3,
+#card4 {
+  margin-top: -35vh;
+  top: 24vh;
+}
+
+
+
+@media screen and (max-width: 767px) {
+
+  #card2,
+  #card3,
+  #card4 {
+    margin-top: -44vh;
+    top: 14vh;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  #card2,
+  #card3,
+  #card4 {
+    margin-top: -39vh;
+    top: 19vh;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+
+  #card2,
+  #card3,
+  #card4 {
+    margin-top: -33vh;
+    top: 25vh;
+  }
+}
+
+.card {
+  position: sticky;
+}
+
+#card1 .card-body {
+  /* background-color: red; */
+  padding: 0;
+  box-shadow: unset;
+}
+
+
+#card2 .card-body {
+  height: 45vh;
+}
+
+
+#card3 .card-body {
+  height: 45vh;
+}
+
+
+#card4 .card-body {
+  height: 45vh;
+}
+
+
+.card-body {
+  box-sizing: border-box;
+  padding: 30px;
+  border-radius: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
