@@ -27,14 +27,25 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
-  /* font-size: 1.0vw; */
+  font-size: 1.0vw;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 .container {
-  padding-inline: 15px;
+  width: 85%;
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    font-size: 19px;
+  }
+
+  .container {
+    max-width: 1800px;
+    padding-inline: 8%;
+  }
 }
 
 
@@ -124,8 +135,139 @@ body {
   background-color: var(--dark-grey);
 }
 
+footer {
+  padding: 40px 0% 30px;
+}
+
+footer {
+  margin-top: -30vh;
+}
+
+footer.contact,
+footer.about {
+  margin-top: unset;
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    padding: 120px 0% 30px;
+    margin-top: -39vh;
+  }
+
+  footer.container,
+  footer.about {
+    margin-top: unset;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  footer {
+    padding: 120px 0% 30px;
+    margin-top: -29vh;
+  }
+
+  footer.container,
+  footer.about {
+    margin-top: unset;
+  }
+}
+
+footer .container {
+  padding-inline: 8%;
+  position: relative;
+}
+
+footer .wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.wrapper-footer-top {
+  gap: 16px;
+  display: grid;
+  margin-bottom: 230px;
+}
+
+h1.wrapper-footer-middle {
+  font-size: clamp(24px, 9vw, 137.5px);
+  line-height: 1.1;
+  margin-bottom: 42px;
+}
+
+.wrapper-footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+
+.cta.transparent.circle {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 3.8em;
+  padding-left: 0;
+  padding-right: 0;
+  line-height: 20px;
+  display: flex;
+}
+
+
+.cta.transparent {
+  border: 1px solid var(--smoked-white);
+  color: #f8f1ec;
+  background-color: #0000;
+}
+
+.footer-link {
+  margin-left: 1em;
+  line-height: 1.3;
+  font-weight: 500;
+}
+
+
 .red {
   background-color: var(--red);
+}
+
+.circle-big.red {
+  z-index: 0;
+  border-radius: 999px;
+  width: 287px;
+  height: 287px;
+  inset: 20% 0% 0%;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+}
+
+.wrapper-footer-ctas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  height: fit-content;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper-footer-bottom {
+    justify-content: flex-start;
+    gap: 16px;
+  }
+
+  .circle-big.red {
+    z-index: 0;
+    border-radius: 999px;
+    width: 450px;
+    height: 450px;
+    inset: 5% 0% 0%;
+  }
+
+  .wrapper-footer-top {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 h1 {
