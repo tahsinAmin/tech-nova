@@ -139,7 +139,7 @@ body {
 footer {
   padding: 40px 0% 30px;
 
-  margin-top: -42vh;
+  margin-top: -30vh;
   position: relative;
   z-index: 10;
 
@@ -148,6 +148,7 @@ footer {
 footer.contact,
 footer.about {
   margin-top: unset;
+  position: unset;
 }
 
 @media screen and (min-width: 768px) {
@@ -197,9 +198,17 @@ h1.wrapper-footer-middle {
 
 .wrapper-footer-bottom {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
+  gap: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper-footer-bottom {
+    justify-content: space-between;
+   gap: unset;
+  }
 }
 
 
@@ -258,8 +267,6 @@ h1.wrapper-footer-middle {
   }
 
   .circle-big.red {
-    z-index: 0;
-    border-radius: 999px;
     width: 450px;
     height: 450px;
     inset: 5% 0% 0%;
@@ -295,7 +302,7 @@ h1 {
 /* Hero Section */
 
 .section-hero.home {
-  background: linear-gradient(0deg, var(--red), 42%, #001e3fe3 100%);
+  background: linear-gradient(0deg, var(--red), 42%, #000 100%);
   background-color: var(--green);
 }
 
@@ -438,10 +445,23 @@ h2 {
 }
 
 .team-list {
-  display: flex;
+  gap: 3px;
+  justify-content: space-between;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 6px;
+  display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  .team-list {
+    justify-content: center;
+    gap: 6px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .team-list {
+    gap: 24px;
+  }
 }
 
 .team-item {
@@ -510,6 +530,9 @@ form input {
 }
 
 @media screen and (min-width: 768px) {
+  .form-container {
+    min-width: 70%;
+  }
 
   .cta {
     font-size: 13px;
@@ -531,6 +554,20 @@ form input {
     padding: 12px 30px;
   }
 }
+
+@media screen and (min-width: 1440px) {
+  .cta {
+    padding: 1.1em 2.2em;
+    border-radius: 300px;
+  }
+
+  .cta.transparent.circle {
+    height: -webkit-fill-available;
+  }
+}
+
+/* ============================== */
+
 :root {
   --cards: 4;
   --cardHeight: 87vh;
@@ -675,9 +712,6 @@ h2 {
   display: inline-block;
 }
 
-.story {
-  margin-top: -30vh;
-}
 
 .page-wrapper {
   z-index: 0;

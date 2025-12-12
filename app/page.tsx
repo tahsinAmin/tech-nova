@@ -1,4 +1,5 @@
-import Story from "./components/Story";
+import Clients from "./components/Clients";
+import Services from "./components/Services";
 
 export default function Home() {
   return (
@@ -16,27 +17,8 @@ export default function Home() {
           <p className="description">We learn from every experience by pushing the boundaries past the ordinary. Let's create best website experience, together.</p>
         </div>
       </div>
-      <div className="services pageWidth">
-        <h2 className="text-center text-2xl font-semibold pb-4">Our Services</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
-          <div className="productsBoxItem">
-            <div className="productsBoxItemSmall">
-              <h4>Voice</h4>
-            </div>
-          </div>
-          <div className="productsBoxItem">
-            <div className="productsBoxItemSmall">
-              <h4>Messaging</h4>
-            </div>
-          </div>
-          <div className="productsBoxItem">
-            <div className="productsBoxItemSmall">
-              <h4>Platform</h4>
-            </div>
-          </div>
-        </div>
-      </div>
-      <Story/>
+      <Services/>
+      <Clients/>
     </>
   );
 }

@@ -124,7 +124,7 @@ const Story = () => {
                     {/* <div className="overlay-fade-bottom"></div> */}
                 </div>
             </div>
-            <div style={{height: '50vh'}}></div>
+            {/* <div style={{height: '50vh'}}></div> */}
         </div>
     </section>
   )
