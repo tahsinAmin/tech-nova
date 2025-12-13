@@ -25,7 +25,7 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.0vw;
+  font-size: 1vw;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -41,7 +41,6 @@ body {
     padding-inline: 8%;
   }
 }
-
 
 /* ============================================== */
 /* =================== Navbar =================== */
@@ -75,7 +74,7 @@ body {
   overflow: hidden;
   bottom: 100%;
   right: 0;
-  transition: all .3s;
+  transition: all 0.3s;
   display: flex;
   color: white;
   padding-top: 80px;
@@ -84,7 +83,6 @@ body {
 .navbar-main-wrapper.show {
   bottom: 0;
 }
-
 
 .navlinks {
   gap: 3em;
@@ -95,12 +93,12 @@ body {
 }
 
 .at-top .navlink-text-2 {
-  color: white
+  color: white;
 }
 
 .about.at-top .navlink-text-2,
 .contact.at-top .navlink-text-2 {
-  color: black
+  color: black;
 }
 
 .navlink-text-2 {
@@ -115,7 +113,7 @@ body {
 }
 
 .cta.nav {
-  padding: .433333em 1.72222em;
+  padding: 0.433333em 1.72222em;
   font-size: 1.5em;
   font-weight: 400;
   line-height: 177.778%;
@@ -136,13 +134,11 @@ footer {
   margin-top: -30vh;
   position: relative;
   z-index: 10;
-
 }
 
 footer.contact,
 footer.about {
   margin-top: unset;
-  position: unset;
 }
 
 @media screen and (min-width: 768px) {
@@ -205,8 +201,6 @@ h1.wrapper-footer-middle {
   }
 }
 
-
-
 .cta.transparent.circle {
   text-align: center;
   justify-content: center;
@@ -217,7 +211,6 @@ h1.wrapper-footer-middle {
   line-height: 20px;
   display: flex;
 }
-
 
 .cta.transparent {
   border: 1px solid var(--smoked-white);
@@ -231,20 +224,39 @@ h1.wrapper-footer-middle {
   font-weight: 500;
 }
 
-
 .red {
-  background-image: linear-gradient(to right bottom, #000000, #2d121b, #55192f, #801c45, #ae1b5b, #c81a5f, #e21a62, #fc1c62, #ff3050, #ff443d, #ff5727, #ff6a00);
+  background-image: linear-gradient(
+    to right bottom,
+    #000000,
+    #2d121b,
+    #55192f,
+    #801c45,
+    #ae1b5b,
+    #c81a5f,
+    #e21a62,
+    #fc1c62,
+    #ff3050,
+    #ff443d,
+    #ff5727,
+    #ff6a00
+  );
 }
 
-.circle-big.red {
+.circle-big {
   z-index: 0;
-  border-radius: 999px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.circle-big.circle-visible {
   width: 287px;
   height: 287px;
-  inset: 20% 0% 0%;
-  margin-left: auto;
-  margin-right: auto;
-  position: absolute;
+  border-radius: 50%;
 }
 
 .wrapper-footer-ctas {
@@ -260,11 +272,11 @@ h1.wrapper-footer-middle {
     gap: 16px;
   }
 
-  .circle-big.red {
+  /* .circle-big {
     width: 450px;
     height: 450px;
     inset: 5% 0% 0%;
-  }
+  } */
 
   .wrapper-footer-top {
     display: flex;
@@ -286,7 +298,6 @@ h1 {
 }
 
 @media screen and (min-width: 768px) {
-
   .home h1,
   .about h1 {
     font-size: clamp(3.1em, 7vw, 8em);
@@ -303,7 +314,6 @@ h1 {
 
 /* Hero Section */
 
-
 .section-hero {
   color: white;
   min-height: 100vh;
@@ -314,7 +324,21 @@ h1 {
 }
 
 .section-hero.home {
-  background-image: linear-gradient(to right bottom, #000000, #2d121b, #55192f, #801c45, #ae1b5b, #c81a5f, #e21a62, #fc1c62, #ff3050, #ff443d, #ff5727, #ff6a00);
+  background-image: linear-gradient(
+    to right bottom,
+    #000000,
+    #2d121b,
+    #55192f,
+    #801c45,
+    #ae1b5b,
+    #c81a5f,
+    #e21a62,
+    #fc1c62,
+    #ff3050,
+    #ff443d,
+    #ff5727,
+    #ff6a00
+  );
 
   padding: 100px 2% 40px;
 }
@@ -376,7 +400,7 @@ h1 {
 }
 
 .productsBoxItem:before {
-  content: '';
+  content: "";
   position: absolute;
   z-index: 5;
   width: 100%;
@@ -384,7 +408,12 @@ h1 {
   top: 0;
   left: 0;
   opacity: 1;
-  background: linear-gradient(0deg, rgba(0, 30, 63, 0.7) 0%, rgba(0, 30, 63, 0) 50%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 30, 63, 0.7) 0%,
+    rgba(0, 30, 63, 0) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
   transition: opacity 0.3s ease;
   border-radius: 20px;
 }
@@ -418,7 +447,14 @@ h1 {
 /* =================== About =================== */
 .section-hero.about {
   justify-content: flex-end;
-  background-image: linear-gradient(to bottom, #f8f1ec, #fbf4f3, #fcf7f9, #fdfbfd, #ffffff);
+  background-image: linear-gradient(
+    to bottom,
+    #f8f1ec,
+    #fbf4f3,
+    #fcf7f9,
+    #fdfbfd,
+    #ffffff
+  );
   color: var(--dark-grey);
   padding-bottom: 0;
 }
@@ -431,12 +467,10 @@ h1 {
 
 .footer-link,
 .small-text {
-
   font-size: 16px;
 }
 
 @media screen and (min-width: 768px) {
-
   .footer-link,
   .small-text {
     font-size: 13px;
@@ -444,7 +478,6 @@ h1 {
 }
 
 @media screen and (min-width: 1024px) {
-
   .footer-link,
   .small-text {
     font-size: 1.38em;
@@ -470,7 +503,8 @@ h3 {
   line-height: 120%;
 }
 
-h2, h3 {
+h2,
+h3 {
   background: linear-gradient(to right, #ff6a00, #ee0979);
   background-clip: text;
   -webkit-background-clip: text;
@@ -536,11 +570,9 @@ h4 {
   font-size: 14px;
 }
 
-
 .smoked-white {
   background-color: var(--smoked-white);
 }
-
 
 /* ============================================== */
 /* =================== Mission =================== */
@@ -561,7 +593,6 @@ h4 {
   display: flex;
   flex-direction: column;
   gap: 16px;
-
 }
 
 .layout-contact .small-text {
@@ -633,7 +664,6 @@ form input {
   form input {
     font-size: 2.36em;
   }
-
 }
 
 /* ============================== */
@@ -652,17 +682,14 @@ form input {
   display: grid;
 }
 
-
 #card1 {
   --index: 1;
   top: 8vh;
 }
 
-
 #card2 {
   --index: 2;
 }
-
 
 #card3 {
   --index: 3;
@@ -679,10 +706,7 @@ form input {
   top: 24vh;
 }
 
-
-
 @media screen and (max-width: 767px) {
-
   #card2,
   #card3,
   #card4 {
@@ -692,7 +716,6 @@ form input {
 }
 
 @media screen and (min-width: 768px) {
-
   #card2,
   #card3,
   #card4 {
@@ -702,7 +725,6 @@ form input {
 }
 
 @media screen and (min-width: 1440px) {
-
   #card2,
   #card3,
   #card4 {
@@ -720,21 +742,17 @@ form input {
   box-shadow: unset;
 }
 
-
 #card2 .card-body {
   height: 45vh;
 }
-
 
 #card3 .card-body {
   height: 45vh;
 }
 
-
 #card4 .card-body {
   height: 45vh;
 }
-
 
 .card-body {
   box-sizing: border-box;
@@ -780,19 +798,16 @@ body {
   line-height: 1.5;
 }
 
-
 img {
   vertical-align: middle;
   max-width: 100%;
   display: inline-block;
 }
 
-
 .inline-block {
   max-width: 100%;
   display: inline-block;
 }
-
 
 .page-wrapper {
   z-index: 0;
@@ -849,7 +864,6 @@ img {
   display: grid;
   position: relative;
 }
-
 
 .timeline_left {
   text-align: right;
