@@ -15,8 +15,8 @@ const Footer = () => {
               <Link href="/contact" className="footer-link">Contact</Link>
             </div>
             <div className="wrapper-footer-ctas md:w-3/5 lg:w-2/5">
-              <button className="rounded-4xl bg-white text-black p-4">Book a call</button>
-              <button className="rounded-4xl bg-[#c4b2f6] text-black p-4">Join our team</button>
+              <button className="text-sm rounded-4xl bg-white text-black p-4">Book a call</button>
+              <button className="text-sm rounded-4xl bg-[#c4b2f6] text-black p-4">Join our team</button>
             </div>
           </div>
           <h1 className="wrapper wrapper-footer-middle text-white">

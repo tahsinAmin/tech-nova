@@ -234,7 +234,7 @@ h1.wrapper-footer-middle {
 
 
 .red {
-  background-color: var(--red);
+  background-image: linear-gradient(to right bottom, #000000, #2d121b, #55192f, #801c45, #ae1b5b, #c81a5f, #e21a62, #fc1c62, #ff3050, #ff443d, #ff5727, #ff6a00);
 }
 
 .circle-big.red {
@@ -427,6 +427,28 @@ h1 {
   margin-bottom: 10px;
 }
 
+.footer-link,
+.small-text {
+
+  font-size: 16px;
+}
+
+@media screen and (min-width: 768px) {
+
+  .footer-link,
+  .small-text {
+    font-size: 13px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+  .footer-link,
+  .small-text {
+    font-size: 1.38em;
+  }
+}
+
 /* Team */
 
 .services,
@@ -516,6 +538,12 @@ h4 {
   background-color: var(--smoked-white);
 }
 
+
+/* ============================================== */
+/* =================== Mission =================== */
+.mission .block {
+  font-size: 15px;
+}
 
 /* ============================================== */
 /* =================== Contact =================== */

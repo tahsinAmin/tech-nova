@@ -60,7 +60,7 @@ const Header = () => {
         <>
             <div className={`navbar fixed w-full ${pathname.replace(/\//g, '')} transition-transform duration-300 z-50  ${atTop ? 'at-top bg-transparent' : showMenu ? '' : 'bg-white shadow-md'} ${isVisible ? 'translate-y-0' : '-translate-y-full mt-0'}`}>
                 <nav className={`flex justify-between items-center rounded-xl`}>
-                    <Link href="/" className='pl-[18px]' onClick={() => setShowMenu(false)}><Image src="/logo-red-big-1.svg" alt="Logo" width={200} height={200} /></Link>
+                    <Link href="/" className='pl-[18px]' onClick={() => setShowMenu(false)}><Image src="/logo-red-big-1.svg" alt="Logo" width={200} height={30} /></Link>
                     <div className='flex-1 flex gap-5 justify-end'>
                         <div className='navlinks hidden lg:flex'>
                             <Link href="/" className={`navlink-text-2 ${isActive('/') ? 'border-b-2 border-red-500' : ''}`}>Home</Link>
