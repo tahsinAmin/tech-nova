@@ -54,9 +54,9 @@ const Story = () => {
                                 </div>
                             </div>
                             <div className="timeline_image-wrapper">
-                                <Image loading="lazy" width="480" height="400" alt="Electric vehicle"
+                                <Image loading="lazy" width="480" height="400" alt="Story"
                                     src="https://images.unsplash.com/photo-1689101298752-886c970ff200?q=80&w=1004&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                    alt="Story"/>
+                                    />
                             </div>
                         </div>
                     </div>
@@ -74,9 +74,9 @@ const Story = () => {
                                 </div>
                             </div>
                             <div className="timeline_image-wrapper">
-                                <Image loading="lazy" width="480" height="400" alt="Electric vehicle"
+                                <Image loading="lazy" width="480" height="400" alt="Story"
                                     src="https://images.unsplash.com/photo-1689101298752-886c970ff200?q=80&w=1004&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                    alt="Story"/>
+                                    />
                             </div>
                         </div>
                     </div>
@@ -94,9 +94,9 @@ const Story = () => {
                                 </div>
                             </div>
                             <div className="timeline_image-wrapper">
-                                <Image loading="lazy" width="480" height="400" alt="Electric vehicle"
+                                <Image loading="lazy" width="480" height="400" alt="Story"
                                     src="https://images.unsplash.com/photo-1689101298752-886c970ff200?q=80&w=1004&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                    alt="Story"/>
+                                    />
                             </div>
                         </div>
                     </div>
@@ -114,9 +114,9 @@ const Story = () => {
                                 </div>
                             </div>
                             <div className="timeline_image-wrapper">
-                                <Image loading="lazy" width="480" height="400" alt="Electric vehicle"
+                                <Image loading="lazy" width="480" height="400" alt="Story"
                                     src="https://images.unsplash.com/photo-1689101298752-886c970ff200?q=80&w=1004&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                    alt="Story"/>
+                                    />
                             </div>
                         </div>
                     </div>

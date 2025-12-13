@@ -56,7 +56,7 @@ export default function Contact() {
               </form>)}
 
             <div className="or-book-a-call flex flex-col sm:flex-1 sm:flex-row sm:justify-end sm:items-start md:gap-4">
-              <div className="text-center py-[16px]">or</div>
+              <div className="text-sm text-center py-[16px]">or</div>
               <button
                 type="submit"
                 className="cta"
