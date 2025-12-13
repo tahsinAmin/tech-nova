@@ -4,7 +4,6 @@
   --background: #ffffff;
   --foreground: #171717;
   --dark-grey: #272727;
-  --green: #00524e;
   --smoked-white: #f8f1ec;
 }
 
@@ -340,12 +339,6 @@ h1 {
   justify-content: center;
 }
 
-@media screen and (min-width: 1024px) {
-  .productsBoxItem {
-    height: 29vw;
-  }
-}
-
 .productsBoxItem:nth-child(2) {
   background-image: url(https://images.unsplash.com/photo-1611606063065-ee7946f0787a?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
 }
@@ -365,6 +358,9 @@ h1 {
 }
 
 @media screen and (min-width: 1024px) {
+  .productsBoxItem {
+    height: 29vw;
+  }
   .productsBoxItemSmall {
     margin-top: 18vw;
   }
@@ -467,15 +463,16 @@ h2 {
   line-height: 1.1;
   font-weight: 500;
   font-size: 50px;
-  background: linear-gradient(to right, #ff6a00, #ee0979);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 h3 {
   font-size: clamp(1.8em, 3vw, 2.5em);
   line-height: 120%;
+}
+
+h2, h3 {
   background: linear-gradient(to right, #ff6a00, #ee0979);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -970,13 +967,6 @@ img {
   position: absolute;
   inset: 0% 0% auto;
 }
-
-/* .overlay-fade-bottom {
-  background-image: linear-gradient(to top, #0a0a0a, #0a0a0a00);
-  height: 80px;
-  position: absolute;
-  inset: auto 0% 0%;
-} */
 
 @media (max-width: 767px) {
   h2 {
