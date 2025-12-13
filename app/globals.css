@@ -202,7 +202,7 @@ h1.wrapper-footer-middle {
 @media screen and (min-width: 768px) {
   .wrapper-footer-bottom {
     justify-content: space-between;
-   gap: unset;
+    gap: unset;
   }
 }
 
@@ -279,11 +279,19 @@ h1 {
 
 .home h1,
 .about h1 {
-  font-size: clamp(3.1em, 7vw, 8em);
+  font-size: 50px;
   font-weight: medium;
   margin-bottom: 10px;
   font-weight: 400;
   letter-spacing: -2px;
+}
+
+@media screen and (min-width: 768px) {
+
+  .home h1,
+  .about h1 {
+    font-size: clamp(3.1em, 7vw, 8em);
+  }
 }
 
 .home h1,
@@ -296,10 +304,6 @@ h1 {
 
 /* Hero Section */
 
-.section-hero.home {
-  background: linear-gradient(0deg, var(--red), 42%, #000 100%);
-  background-color: var(--green);
-}
 
 .section-hero {
   color: white;
@@ -399,6 +403,7 @@ h1 {
   }
 
   .hero-bottom .description {
+    font-size: clamp(13px, 1.69vw, 24px);
     width: 55%;
   }
 }
@@ -417,8 +422,9 @@ h1 {
 /* =================== About =================== */
 .section-hero.about {
   justify-content: flex-end;
-  background-color: var(--smoked-white);
+  background-image: linear-gradient(to bottom, #f8f1ec, #fbf4f3, #fcf7f9, #fdfbfd, #ffffff);
   color: var(--dark-grey);
+  padding-bottom: 0;
 }
 
 .small-text {
