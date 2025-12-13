@@ -19,7 +19,7 @@ export default function Contact() {
     <>
       <div className="section-hero layout-contact flex-1 bg-zinc-50 font-sans dark:bg-black">
         <h1 className="sm:mb-[94px] text-[50px] font-semibold mb-[10px]">Need some assistance or curious about who we are?</h1>
-        <div className="px-[24px]">
+        <div className="px-[4vw] lg:px-[8vw]">
           {formMsg ? null : <div className="small-text sm:mt-0">Send us a messsage</div>}
           <div className="sm:flex sm:gap-4 sm:justify-between">
             {formMsg ?

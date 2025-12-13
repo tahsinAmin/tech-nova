@@ -33,10 +33,6 @@ body {
   padding: 0;
 }
 
-.container {
-  width: 85%;
-}
-
 @media screen and (min-width: 1440px) {
   body {
     font-size: 19px;
@@ -55,7 +51,7 @@ body {
   margin-top: 1%;
   padding: 1%;
   box-sizing: border-box;
-  width: calc(100% - 2%); /* Account for left and right margins */
+  width: calc(100% - 2%);
   left: 0;
   right: 0;
   margin-inline: auto;
@@ -315,6 +311,12 @@ h1 {
   padding: 100px 5% 40px;
 }
 
+.section-hero.home {
+  background-image: linear-gradient(to right bottom, #000000, #2d121b, #55192f, #801c45, #ae1b5b, #c81a5f, #e21a62, #fc1c62, #ff3050, #ff443d, #ff5727, #ff6a00);
+
+  padding: 100px 2% 40px;
+}
+
 .pageWidth {
   width: 84%;
   margin: auto;
@@ -389,7 +391,7 @@ h1 {
 }
 
 .description {
-  font-size: clamp(13px, 2vw, 24px);
+  font-size: clamp(13px, 3vw, 24px);
 }
 
 @media screen and (min-width: 768px) {
@@ -437,6 +439,28 @@ h2 {
   font-size: clamp(2.8em, 7vw, 5.8em);
   line-height: 1.1;
   font-weight: 500;
+  font-size: 50px;
+  background: linear-gradient(to right, #ff6a00, #ee0979);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h3 {
+  font-size: clamp(1.8em, 3vw, 2.5em);
+  line-height: 120%;
+  background: linear-gradient(to right, #ff6a00, #ee0979);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  h4 {
+    font-size: 1.4em;
+  }
 }
 
 .team .subtitle {
@@ -520,7 +544,9 @@ h2 {
 }
 
 form input {
-  font-size: clamp(20px, 3.2vw, 24px);
+  padding-top: 1.7em;
+  padding-bottom: 1em;
+  font-size: 20px;
 }
 
 .layout-contact h1 {
@@ -538,6 +564,10 @@ form input {
     font-size: 13px;
     padding: 1.1em 2.2em;
   }
+
+  form input {
+    font-size: 24px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -552,6 +582,7 @@ form input {
 
   .cta {
     padding: 12px 30px;
+    font-size: 1.38em;
   }
 }
 
@@ -564,6 +595,11 @@ form input {
   .cta.transparent.circle {
     height: -webkit-fill-available;
   }
+
+  form input {
+    font-size: 2.36em;
+  }
+
 }
 
 /* ============================== */
@@ -698,7 +734,7 @@ body {
   min-height: 100%;
   margin: 0;
   font-family: Arial, sans-serif;
-  font-size: 14px;
+  font-size: 1vw;
   letter-spacing: 1px;
   line-height: 1.5;
 }
@@ -710,12 +746,6 @@ img {
   display: inline-block;
 }
 
-h2 {
-  font-size: 50px;
-  background: linear-gradient(to right, #ff6a00, #ee0979);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 
 .inline-block {
   max-width: 100%;
