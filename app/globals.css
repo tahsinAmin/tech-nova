@@ -420,6 +420,11 @@ h1 {
 
 .description {
   font-size: clamp(13px, 3vw, 24px);
+  color: var(--dark-grey);
+}
+.section-timeline-heading .description,
+.hero-bottom .description {
+  color: var(--foreground);
 }
 
 @media screen and (min-width: 768px) {
@@ -440,6 +445,10 @@ h1 {
 
   .hero-bottom .description {
     width: 45%;
+  }
+
+  .navlink-text-2 {
+    color: black;
   }
 }
 
@@ -585,7 +594,7 @@ h4 {
 .section-hero.layout-contact {
   justify-content: unset;
   background-color: var(--smoked-white);
-  color: var(--dark-gey);
+  color: var(--dark-grey);
   min-height: 70vh;
 }
 
@@ -760,6 +769,10 @@ form input {
   border-radius: 50px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background-color: white;
+}
+
+.card:first-child .card-body {
+  background-color: transparent;
 }
 
 .user-info {
